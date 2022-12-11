@@ -4,7 +4,8 @@ import GoogleMapReact from 'google-map-react';
 export default function Map(props) {
 
   return (
-    <div style={{ height: '100vh', width: '50%', position: 'fixed'}}>
+
+    <div style={{ height: '100vh'}}>
         <GoogleMapReact 
         bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAP_API }}
         defaultCenter={props.coords}

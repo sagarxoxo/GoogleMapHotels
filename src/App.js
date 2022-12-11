@@ -42,8 +42,8 @@ function App() {
   console.log("ss",singleData)
   return (
     <div>
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
+        <Grid sx={{ flexGrow: 1 }} container spacing={2}>
+          <Grid item xs={12} sm={12} md={12} lg={6}>
             <Map 
               setBounds={setBounds}
               setCoords={setCoords}
@@ -59,7 +59,7 @@ function App() {
               handleClose={handleClose}
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={12} md={12} lg={6}>
             <ListofHouse 
             dataPlace={dataPlace}
             isShown={isShown}
